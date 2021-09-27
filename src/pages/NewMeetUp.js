@@ -1,10 +1,9 @@
 import React from 'react';
+import FormMeetUp from "../components/FormMeetUp";
 
 const NewMeetUp = () => {
     return (
-        <div>
-            NewMeetUp
-        </div>
+        <FormMeetUp/>
     );
 };
 

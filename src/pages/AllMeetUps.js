@@ -23,7 +23,10 @@ const DUMMY_DATA = [
 ];
 const AllMeetUps = () => {
 
-    return  <MeetUpList data={DUMMY_DATA}/>
+    return  (<>
+
+        <MeetUpList data={DUMMY_DATA}/>
+        </>)
 
 };
 
