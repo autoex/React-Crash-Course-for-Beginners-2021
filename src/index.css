@@ -1,2 +1,32 @@
-@import '~antd/dist/antd.css';
-
+body {
+    background-color: #f0f2f5!important;
+}
+.site-layout-content {
+    min-height: 280px;
+    padding: 24px;
+    background: #fff;
+}
+.logo {
+    float: left;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 0 15px;
+    color: white;
+}
+.ant-row-rtl .logo {
+    float: right;
+    margin: 16px 0 16px 24px;
+}
+[data-theme="dark"] .site-layout-content {
+    background: #141414;
+}
+.ant-menu-overflow {
+    justify-content: flex-end;
+}
+.content {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+}
+.ant-card {
+    margin-bottom: 15px!important;
+}

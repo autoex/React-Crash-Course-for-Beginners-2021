@@ -3,20 +3,21 @@ import {Route, Switch} from "react-router-dom";
 import {routes} from "./routes";
 import {Layout} from 'antd';
 import NavMenu from "./components/NavMenu";
+import 'antd/dist/antd.css'
 
 
 
 
 const App = () => {
-    const {Header, Footer, Sider, Content} = Layout;
+    const {Header, Footer,  Content} = Layout;
 
     return (
-        <Layout>
-            <Header justify='start'>
-                <div className="logo" />
+        <Layout className="layout">
+            <Header>
+                <div className="logo" >R MeetUps</div>
                 <NavMenu/>
             </Header>
-            <Content>
+            <Content className='content'>
                 <Switch>
                     {routes.map(route =>
                         <Route
