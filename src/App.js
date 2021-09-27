@@ -28,7 +28,7 @@ const App = () => {
                 </Switch>
             </Content>
             <Footer>
-                Ant Design ©2018 Created by Ant UED
+                R MeetUps ©2k21 Created by Me
             </Footer>
         </Layout>
     );

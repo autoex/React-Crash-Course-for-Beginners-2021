@@ -1,9 +1,12 @@
 import React from 'react';
 import FormMeetUp from "../components/FormMeetUp";
+import {Card} from "antd";
 
 const NewMeetUp = () => {
     return (
-        <FormMeetUp/>
+        <Card hoverable>
+            <FormMeetUp/>
+        </Card>
     );
 };
 
