@@ -1,12 +1,9 @@
 import React from 'react';
 import MeetUpItem from "./MeetUpItem";
 
-const MeetUpList = ({data}) => {
+const MeetUpList = ({data}) =>  <div>{data.map(el => <MeetUpItem key={el.id} el={el}/>)}</div>;
 
-    return <div>
-        {data.map(el => <MeetUpItem key={el.id} el={el}/>)}
-    </div>
 
-};
+
 
 export default MeetUpList;
