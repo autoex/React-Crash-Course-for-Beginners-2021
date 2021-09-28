@@ -5,9 +5,6 @@ import {Layout} from 'antd';
 import NavMenu from "./components/NavMenu";
 import 'antd/dist/antd.css'
 
-
-
-
 const App = () => {
     const {Header, Footer,  Content} = Layout;
 

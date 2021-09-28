@@ -4,7 +4,7 @@ import {Card} from "antd";
 import {useHistory} from 'react-router-dom'
 
 const NewMeetUp = () => {
-    const history = useHistory()
+    const history = useHistory();
     const addNewMeetUp =(data)=> {
         fetch(`https://react-meetups-data-default-rtdb.europe-west1.firebasedatabase.app/meetups.json`,
             {
@@ -15,7 +15,6 @@ const NewMeetUp = () => {
                 }
             })
             .then(()=>history.replace('/'))
-
     };
     return (
         <Card hoverable style={{width: 640}}>

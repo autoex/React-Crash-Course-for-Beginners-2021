@@ -3,11 +3,8 @@ import { Form, Input, Button } from 'antd';
 
 
 const FormMeetUp = ({addNewMeetUp}) => {
-
     const onFinish = (values) => {
         addNewMeetUp(values);
-
-
     };
 
     const onFinishFailed = (errorInfo) => {
@@ -61,8 +58,6 @@ const FormMeetUp = ({addNewMeetUp}) => {
             >
                 <Input.TextArea />
             </Form.Item>
-
-
 
             <Form.Item wrapperCol={{ offset: 4, span: 20 }}>
                 <Button type="primary" htmlType="submit">

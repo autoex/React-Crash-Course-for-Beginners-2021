@@ -6,10 +6,7 @@ import {NavLink} from "react-router-dom";
 const NavMenu = () => {
     return (
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
-            {routes.map(route => {
-
-                return <Menu.Item key={route.pageId}><NavLink to={route.path}>{route.pageName}</NavLink></Menu.Item>;
-            })}
+            {routes.map(route => <Menu.Item key={route.pageId}><NavLink to={route.path}>{route.pageName}</NavLink></Menu.Item>)}
         </Menu>
     );
 };
