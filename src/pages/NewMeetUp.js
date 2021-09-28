@@ -14,7 +14,7 @@ const NewMeetUp = () => {
                     'Content-Type' : 'application/json'
                 }
             })
-            .then(()=>history.push('/'))
+            .then(()=>history.replace('/'))
 
     };
     return (
