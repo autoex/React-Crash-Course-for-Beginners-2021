@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import MeetUpList from "../components/meetups/MeetUpList";
 
 const DUMMY_DATA = [
@@ -21,12 +21,26 @@ const DUMMY_DATA = [
             'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
     },
 ];
-const AllMeetUps = () => {
 
-    return  (<>
+const AllMeetUps = () => {
+    const [meets, setMeets] = useState([]);
+
+    const fetchMeets = () => {
+
+        fetch(`https://react-meetups-data-default-rtdb.europe-west1.firebasedatabase.app/meetups.json`)
+            .then(response => response.json())
+            .then(json => console.log(json))
+
+    };
+
+    useEffect(() => {
+        fetchMeets()
+    }, [])
+
+    return (<>
 
         <MeetUpList data={DUMMY_DATA}/>
-        </>)
+    </>)
 
 };
 

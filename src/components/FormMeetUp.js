@@ -1,10 +1,13 @@
 import React from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
 
+
 const FormMeetUp = ({addNewMeetUp}) => {
+
     const onFinish = (values) => {
         addNewMeetUp(values);
-        console.log('Success:', values);
+
+
     };
 
     const onFinishFailed = (errorInfo) => {
