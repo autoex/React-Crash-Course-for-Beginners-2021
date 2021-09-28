@@ -9,7 +9,7 @@ const NewMeetUp = () => {
         fetch(`https://react-meetups-data-default-rtdb.europe-west1.firebasedatabase.app/meetups.json`,
             {
                 method : 'POST',
-                body: JSON.stringify({id: Date.now(), ...data}),
+                body: JSON.stringify(data),
                 headers: {
                     'Content-Type' : 'application/json'
                 }

@@ -4,7 +4,7 @@ import MeetUpItem from "./MeetUpItem";
 const MeetUpList = ({data}) => {
 
     return <div>
-        {data.map(el => <MeetUpItem el={el}/>)}
+        {data.map(el => <MeetUpItem key={el.id} el={el}/>)}
     </div>
 
 };
