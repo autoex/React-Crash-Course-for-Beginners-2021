@@ -4,7 +4,7 @@ import {Card} from "antd";
 
 const NewMeetUp = () => {
     return (
-        <Card hoverable>
+        <Card hoverable style={{width: 640}}>
             <FormMeetUp/>
         </Card>
     );

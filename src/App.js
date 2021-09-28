@@ -27,7 +27,7 @@ const App = () => {
                             exact={route.exact}/>)}
                 </Switch>
             </Content>
-            <Footer>
+            <Footer >
                 R MeetUps ©2k21 Created by Me
             </Footer>
         </Layout>

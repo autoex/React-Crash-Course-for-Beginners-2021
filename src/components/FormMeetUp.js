@@ -3,7 +3,8 @@ import { Form, Input, Button, Checkbox } from 'antd';
 
 const FormMeetUp = () => {
     const onFinish = (values) => {
-        console.log('Success:', values);
+        const newMeetUp = values;
+        console.log('Success:', newMeetUp);
     };
 
     const onFinishFailed = (errorInfo) => {
@@ -12,8 +13,8 @@ const FormMeetUp = () => {
     return (
         <Form
             name="basic"
-            labelCol={{ span: 8 }}
-            wrapperCol={{ span: 16 }}
+            labelCol={{ span: 4 }}
+            wrapperCol={{ span: 20 }}
             initialValues={{ remember: true }}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
@@ -60,7 +61,7 @@ const FormMeetUp = () => {
 
 
 
-            <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+            <Form.Item wrapperCol={{ offset: 4, span: 20 }}>
                 <Button type="primary" htmlType="submit">
                     Submit
                 </Button>
