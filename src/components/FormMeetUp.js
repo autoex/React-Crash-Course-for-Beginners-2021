@@ -1,10 +1,10 @@
 import React from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
 
-const FormMeetUp = () => {
+const FormMeetUp = ({addNewMeetUp}) => {
     const onFinish = (values) => {
-        const newMeetUp = values;
-        console.log('Success:', newMeetUp);
+        addNewMeetUp(values);
+        console.log('Success:', values);
     };
 
     const onFinishFailed = (errorInfo) => {
