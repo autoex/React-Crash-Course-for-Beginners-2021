@@ -2,18 +2,15 @@ import React from 'react';
 import {Route, Switch} from "react-router-dom";
 import {routes} from "./routes";
 import {Layout} from 'antd';
-import NavMenu from "./components/NavMenu";
 import 'antd/dist/antd.css'
+import HeaderLayout from "./layout/Header";
+import FooterLayout from "./layout/FooterLayout";
 
 const App = () => {
-    const {Header, Footer,  Content} = Layout;
-
+    const {Content} = Layout;
     return (
         <Layout className="layout">
-            <Header>
-                <div className="logo" >R MeetUps</div>
-                <NavMenu/>
-            </Header>
+            <HeaderLayout/>
             <Content className='content'>
                 <Switch>
                     {routes.map(route =>
@@ -24,9 +21,7 @@ const App = () => {
                             exact={route.exact}/>)}
                 </Switch>
             </Content>
-            <Footer >
-                R MeetUps ©2k21 Created by Me
-            </Footer>
+            <FooterLayout/>
         </Layout>
     );
 };
