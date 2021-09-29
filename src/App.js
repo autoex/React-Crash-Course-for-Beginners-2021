@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Route, Switch} from "react-router-dom";
 import {routes} from "./routes";
 import {Layout} from 'antd';
@@ -9,8 +9,10 @@ import {FavouritesContext} from "./context";
 
 const App = () => {
     const {Content} = Layout;
+    const [meets, setMeets] = useState([]);
+    const [favIdUpdate, setFavIdUpdate]=useState(1);
     return (
-        <FavouritesContext.Provider value={{a: 1}}>
+        <FavouritesContext.Provider value={{meets, setMeets, favIdUpdate, setFavIdUpdate}}>
             <Layout className="layout">
                 <HeaderLayout/>
                 <Content className='content'>
