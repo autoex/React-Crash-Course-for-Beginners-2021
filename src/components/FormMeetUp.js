@@ -4,7 +4,7 @@ import { Form, Input, Button } from 'antd';
 
 const FormMeetUp = ({addNewMeetUp}) => {
     const onFinish = (values) => {
-        addNewMeetUp(values);
+        addNewMeetUp({...values, favourite: false});
     };
 
     const onFinishFailed = (errorInfo) => {

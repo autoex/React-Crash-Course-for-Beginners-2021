@@ -4,7 +4,7 @@ import { StarOutlined, StarFilled } from '@ant-design/icons';
 
 const MeetUpItem = ({el}) => {
     const {Meta} = Card;
-    const [favourite, setFavourite] = useState(false);
+    const [favourite, setFavourite] = useState(el.favourite);
     return (
         <Card key={el.id}
               hoverable
